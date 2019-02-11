@@ -83,8 +83,8 @@
 							"serviceWorker": true
 						},
 						"docs": {
-							"baseHref": "/designr/",
-							"deployUrl": "/designr/",
+							"baseHref": "/designr-client/",
+							"deployUrl": "/designr-client/",
 							"fileReplacements": [{
 								"replace": "src/environments/environment.ts",
 								"with": "src/environments/environment.docs.ts"
