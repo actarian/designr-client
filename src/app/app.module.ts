@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule, BrowserTransferStateModule } from '@angular/platform-browser';
-import { EditorModule } from '@designr/editor';
-import { PluginsModule } from '@designr/plugins';
-import { UIModule } from '@designr/ui';
 import { environment } from '../environments/environment';
 import { AppComponent } from './app.component';
 import { AppDatas } from './app.datas';
+import { AppEditor } from './app.editor';
 import { AppPages } from './app.pages';
+import { AppPlugins } from './app.plugins';
 import { AppRouting } from './app.routing';
+import { AppUI } from './app.ui';
 import { ContactComponent } from './pages/contact/contact.component';
 import { DefaultComponent } from './pages/default/default.component';
 import { HomeComponent } from './pages/home/home.component';
@@ -19,30 +19,29 @@ import { HeaderComponent } from './sections/header/header.component';
 	imports: [
 		BrowserModule.withServerTransition(environment.transition),
 		BrowserTransferStateModule,
-		AppRouting,
+		AppRouting, // first
 		AppDatas,
 		AppPages,
-		EditorModule,
-		PluginsModule,
-		UIModule,
+		AppEditor,
+		AppPlugins,
+		AppUI,
 	],
 	providers: [],
 	declarations: [
 		AppComponent,
-		HeaderComponent,
-		FooterComponent,
-		DefaultComponent,
-		NotFoundComponent,
-		HomeComponent,
 		ContactComponent,
+		DefaultComponent,
+		FooterComponent,
+		HeaderComponent,
+		HomeComponent,
+		NotFoundComponent,
 	],
 	entryComponents: [
-		DefaultComponent,
-		NotFoundComponent,
-		HomeComponent,
 		ContactComponent,
+		DefaultComponent,
+		HomeComponent,
+		NotFoundComponent,
 	],
-	bootstrap: [AppComponent]
 })
 
 export class AppModule { }
