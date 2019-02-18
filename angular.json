@@ -42,10 +42,7 @@
 							"extractLicenses": false,
 							"vendorChunk": false,
 							"buildOptimizer": false,
-							"fileReplacements": [{
-								"replace": "src/environments/environment.ts",
-								"with": "src/environments/environment.development.ts"
-						}],
+							"fileReplacements": [{ "replace": "src/environments/environment.ts", "with": "src/environments/environment.development.ts" }],
 							"serviceWorker": true
 						},
 						"staging": {
@@ -59,10 +56,7 @@
 							"extractLicenses": true,
 							"vendorChunk": false,
 							"buildOptimizer": true,
-							"fileReplacements": [{
-								"replace": "src/environments/environment.ts",
-								"with": "src/environments/environment.staging.ts"
-						}],
+							"fileReplacements": [{ "replace": "src/environments/environment.ts", "with": "src/environments/environment.staging.ts" }],
 							"serviceWorker": true
 						},
 						"production": {
@@ -76,19 +70,13 @@
 							"extractLicenses": true,
 							"vendorChunk": false,
 							"buildOptimizer": true,
-							"fileReplacements": [{
-								"replace": "src/environments/environment.ts",
-								"with": "src/environments/environment.production.ts"
-						}],
+							"fileReplacements": [{ "replace": "src/environments/environment.ts", "with": "src/environments/environment.production.ts" }],
 							"serviceWorker": true
 						},
 						"docs": {
 							"baseHref": "/designr-client/",
 							"deployUrl": "/designr-client/",
-							"fileReplacements": [{
-								"replace": "src/environments/environment.ts",
-								"with": "src/environments/environment.docs.ts"
-						}],
+							"fileReplacements": [{ "replace": "src/environments/environment.ts", "with": "src/environments/environment.docs.ts" }],
 							"optimization": true,
 							"outputPath": "docs",
 							"outputHashing": "all",
@@ -100,11 +88,7 @@
 							"vendorChunk": false,
 							"buildOptimizer": true,
 							"serviceWorker": false,
-							"budgets": [{
-								"type": "initial",
-								"maximumWarning": "2mb",
-								"maximumError": "5mb"
-						}]
+							"budgets": [{ "type": "initial", "maximumWarning": "2mb", "maximumError": "5mb" }]
 						}
 					}
 				},
@@ -118,6 +102,9 @@
 					"configurations": {
 						"production": {
 							"browserTarget": "browser:build:production"
+						},
+						"docs": {
+							"browserTarget": "browser:build:docs"
 						}
 					}
 				},
@@ -170,10 +157,7 @@
 							"namedChunks": false,
 							"extractLicenses": true,
 							"vendorChunk": false,
-							"fileReplacements": [{
-								"replace": "src/environments/environment.ts",
-								"with": "src/environments/environment.development.ts"
-						}]
+							"fileReplacements": [{ "replace": "src/environments/environment.ts", "with": "src/environments/environment.development.ts" }]
 						},
 						"staging": {
 							"outputPath": "dist/staging/server",
@@ -183,10 +167,7 @@
 							"namedChunks": false,
 							"extractLicenses": true,
 							"vendorChunk": false,
-							"fileReplacements": [{
-								"replace": "src/environments/environment.ts",
-								"with": "src/environments/environment.staging.ts"
-						}]
+							"fileReplacements": [{ "replace": "src/environments/environment.ts", "with": "src/environments/environment.staging.ts" }]
 						},
 						"production": {
 							"outputPath": "dist/production/server",
@@ -196,10 +177,7 @@
 							"namedChunks": false,
 							"extractLicenses": true,
 							"vendorChunk": false,
-							"fileReplacements": [{
-								"replace": "src/environments/environment.ts",
-								"with": "src/environments/environment.production.ts"
-						}]
+							"fileReplacements": [{ "replace": "src/environments/environment.ts", "with": "src/environments/environment.production.ts" }]
 						}
 					}
 				},
@@ -207,13 +185,13 @@
 					"builder": "@angular-devkit/build-angular:tslint",
 					"options": {
 						"tsConfig": [
-						"src/tsconfig.browser.json",
-						"src/tsconfig.server.json",
-						"src/tsconfig.spec.json"
-					],
+							"src/tsconfig.browser.json",
+							"src/tsconfig.server.json",
+							"src/tsconfig.spec.json"
+						],
 						"exclude": [
-						"**/node_modules/**"
-					]
+							"**/node_modules/**"
+						]
 					}
 				}
 			}

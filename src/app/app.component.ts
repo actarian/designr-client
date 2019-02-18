@@ -3,6 +3,7 @@ import { DisposableComponent, Label, LabelService, RouteService, SlugService } f
 import { GoogleTagManagerPageViewEvent } from '@designr/plugins';
 // import { SwUpdate } from '@angular/service-worker';
 import { takeUntil } from 'rxjs/operators';
+import { environment } from '../environments/environment';
 // import { GtmService } from '@designr/plugins';
 
 @Component({
@@ -31,6 +32,7 @@ export class AppComponent extends DisposableComponent implements DoCheck, AfterV
 		this.labelService.register().pipe(
 			takeUntil(this.unsubscribe)
 		).subscribe();
+		console.log('environment', environment);
 	}
 
 	ngAfterViewChecked() {
