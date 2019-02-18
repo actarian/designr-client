@@ -1,0 +1,38 @@
+a,
+button,
+.btn {
+	display: inline-block;
+	border: none;
+	cursor: pointer;
+	transition: all ease-in-out 350ms;
+
+	&,
+	&:active,
+	&:focus,
+	&:hover,
+	&:visited {
+		color: inherit;
+		text-decoration: none;
+		outline: none;
+	}
+
+	&:hover {
+		box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.15);
+	}
+}
+
+.link {
+	text-decoration: underline;
+	margin: 0 5px;
+}
+
+.btn--cta {
+	padding: 8px 13px;
+	border-radius: 4px;
+	background: #222c34;
+
+	&,
+	&:hover {
+		color: #fff;
+	}
+}

@@ -399,6 +399,12 @@ MIT
 
 @designr/core
 
+@designr/page
+
+@designr/section
+
+@designr/plugins
+
 angular-in-memory-web-api
 MIT
 The MIT License
@@ -430,8 +436,6 @@ THE SOFTWARE.
 
 ngx-markdown
 MIT
-
-@designr/plugins
 
 @designr/ui
 
