@@ -1,30 +1,21 @@
 {
 	"compileOnSave": false,
 	"compilerOptions": {
-		"baseUrl": "./",
+		"module": "commonJs",
 		"outDir": "./dist/out-tsc",
 		"sourceMap": true,
 		"declaration": false,
-		"module": "es2015",
 		"moduleResolution": "node",
 		"emitDecoratorMetadata": true,
 		"experimentalDecorators": true,
-		"importHelpers": true,
 		"target": "es5",
-		"typeRoots": ["node_modules/@types"],
-		"lib": ["es2018", "dom"],
-		"paths": {
-			"@designr/core": ["dist/designr/core"],
-			"@designr/core/*": ["dist/designr/core/*"],
-			"@designr/data": ["dist/designr/data"],
-			"@designr/data/*": ["dist/designr/data/*"],
-			"@designr/ui": ["dist/designr/ui"],
-			"@designr/ui/*": ["dist/designr/ui/*"],
-			"@designr/editor": ["dist/designr/editor"],
-			"@designr/editor/*": ["dist/designr/editor/*"],
-			"@designr/plugins": ["dist/designr/plugins"],
-			"@designr/plugins/*": ["dist/designr/plugins/*"]
-		}
+		"typeRoots": [
+			"node_modules/@types"
+		],
+		"lib": [
+			"es2017",
+			"dom"
+		]
 	},
-	"exclude": ["node_modules"],
+	"exclude": ["node_modules"]
 }
