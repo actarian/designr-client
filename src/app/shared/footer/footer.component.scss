@@ -1,11 +1,10 @@
 @import "../../../scss/variables";
 
 .footer {
-	background: white;
-	border-top: 1px solid #ccc;
-	padding-bottom: 30px;
-
-	margin-bottom: 100px; // cookie?
+	padding: 40px 0 180px 0;
+	font-size: 0.9rem;
+	background: $background-secondary;
+	color: $foreground-secondary;
 }
 
 .row {
@@ -13,9 +12,10 @@
 }
 
 .badge {
-	background: #313f4c;
+	background: $primary;
 	color: #fff;
 	padding: 4px 8px;
 	font-size: 13px;
 	border-radius: 4px;
+	margin: 0 4px 4px 0;
 }

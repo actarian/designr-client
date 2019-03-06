@@ -16,7 +16,7 @@ Upgrading Npm on windows
 
 ___
 
-#### [Angular CLI](https://github.com/angular/angular-cli) version 7.2.4
+#### [Angular CLI](https://github.com/angular/angular-cli) version 7.3.4
 * windows `npm install -g @angular/cli`  
 * mac `sudo npm install -g @angular/cli --unsafe-perm`
 
@@ -58,7 +58,7 @@ ___
 
 ___
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.4.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.4.
 
 <!--
 

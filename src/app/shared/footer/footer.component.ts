@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 import { DisposableComponent } from '@designr/core';
 
 @Component({
@@ -8,10 +8,6 @@ import { DisposableComponent } from '@designr/core';
 	encapsulation: ViewEncapsulation.Emulated,
 })
 
-export class FooterComponent extends DisposableComponent implements OnInit {
-
-	ngOnInit() {
-
-	}
+export class FooterComponent extends DisposableComponent {
 
 }

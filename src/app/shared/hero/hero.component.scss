@@ -1,6 +1,0 @@
-@import '../../../scss/mixins';
-
-.inner {
-	@include aspect(3, 2);
-	align-items: center;
-}

@@ -1,26 +1,27 @@
+
 import { AuthStrategy } from '@designr/core';
 
 export const environment = {
 	core: {
 		authStrategy: AuthStrategy.Cookie,
-		assets: '/designr-client/assets',
+		assets: '/designr/assets',
 		defaultLanguage: 'it',
 		defaultMarket: 'it',
 		languages: [
 			{ id: 1, name: 'Italiano', lang: 'it' }
 		],
-		public: '/designr-client',
+		public: '/designr',
 		preboot: {
 			appRoot: 'app-component'
 		},
 		production: false,
-		transition: {
-			appId: 'app'
-		},
 		routing: {
 			initialNavigation: 'enabled',
 			enableTracing: false,
 			useHash: true,
+		},
+		transition: {
+			appId: 'app'
 		},
 		urlStrategy: '',
 		useLang: false,
@@ -44,14 +45,14 @@ export const environment = {
 	},
 	plugins: {
 		facebook: {
-			appId: 2044894462438447,
+			appId: 431784307363175,
 			fields: 'id,name,first_name,last_name,email,gender,picture,cover,link',
 			scope: 'public_profile, email',
-			tokenClient: 'f8cfcad4c81572987d21ecd4d115918f',
+			tokenClient: '5413d2e564a63859151298efaf16cec6',
 			version: 'v3.0',
 		},
 		google: {
-			clientId: '635556948154-k7fm0pvn6va39tap1ge4iq23ntd4hu37.apps.googleusercontent.com',
+			clientId: '196838761783-2faop0kmtoncjqju4n39pnrbkaoqdkq0.apps.googleusercontent.com',
 		},
 		googleTagManager: {
 			id: 'GTM-WXLDKZW',
@@ -82,20 +83,8 @@ export const environment = {
 			businessunitName: 'eurospin-viaggi.wslabs.it',
 			minimumReviews: 1000,
 		},
-		swiper: {
-			direction: 'horizontal',
-			slidesPerView: 'auto',
-			spaceBetween: 8,
-			grabCursor: true,
-			navigation: {
-				nextEl: '.swiper-button-next',
-				prevEl: '.swiper-button-prev',
-			},
-			pagination: {
-				el: '.swiper-pagination',
-				type: 'bullets',
-				clickable: true
-			}
-		},
+	},
+	picture: {
+		placeholder: 'https://dummyimage.com/${w}x${h}/000000/222222/'
 	}
 };
