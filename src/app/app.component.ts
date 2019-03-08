@@ -27,21 +27,21 @@ export class AppComponent extends DisposableComponent implements DoCheck {
 		// private swUpdate: SwUpdate,
 	) {
 		super();
-		// get slugs from bom
-		this.slugService.register().pipe(
-			takeUntil(this.unsubscribe)
-		).subscribe();
-		// get labels from bom
-		this.labelService.register().pipe(
-			takeUntil(this.unsubscribe)
-		).subscribe();
+		this.slugService.observe$().pipe(
+			takeUntil(this.unsubscribe),
+		).subscribe((keys) => {
+			console.log('AppComponent.slugService.collect', keys);
+		});
+		this.labelService.observe$().pipe(
+			takeUntil(this.unsubscribe),
+		).subscribe((keys) => {
+			console.log('AppComponent.labelService.collect', keys);
+		});
 	}
 
 	ngDoCheck() {
 		// called whenever Angular runs change detection
-		console.log('AppComponent.ngDoCheck');
-		this.slugService.collect();
-		this.labelService.collect();
+		// console.log('AppComponent.ngDoCheck');
 	}
 
 	prepareRoute(outlet: RouterOutlet) {
