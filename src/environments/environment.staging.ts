@@ -4,13 +4,13 @@ import { AuthStrategy } from '@designr/core';
 export const environment = {
 	core: {
 		authStrategy: AuthStrategy.Cookie,
-		assets: '/designr/assets',
+		assets: '/assets',
 		defaultLanguage: 'it',
 		defaultMarket: 'it',
 		languages: [
 			{ id: 1, name: 'Italiano', lang: 'it' }
 		],
-		public: '/designr',
+		public: '/',
 		preboot: {
 			appRoot: 'app-component'
 		},
